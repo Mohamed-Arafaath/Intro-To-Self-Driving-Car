@@ -25,10 +25,11 @@ def find_match(world, measurement):
         ->((world[i][j]  == measurement[0])i.e the colour of the cell under robot 
                             and the 1st index of measurement 
         ->(world[i][j+1] == measurement[1])i.e the colour of the cell near robot 
-                            and the 2nd index of measurement"""
-            if ((world[i][j] == measurement[0]) & (world[i][j+1] == measurement[1]) ):
-                #if the condition is true,append the index to the empty list
-                possible_locations.append([i,j])
+                             and the 2nd index of measurement"""
+            if j < world.shape[1] - 1:
+              if ((world[i][j] == measurement[0]) & (world[i][j+1] == measurement[1]) ):
+                  #if the condition is true,append the index to the empty list
+                  possible_locations.append([i,j])
  
     
     
