@@ -1,40 +1,43 @@
-# Write the park function so that it actually parks your vehicle.
+# CODE CELL
 
-from Car import Car
-import time
+# Before/After running any code changes make sure to click the button "Restart Connection" above first.
+# Also make sure to click Reset in the simulator to refresh the connection.
+# You need to wait for the Kernel Ready message.
 
-def park(car):
-    # TODO: Fix this function!
-    #  currently it just drives back and forth
-    #  Note that the allowed steering angles are
-    #  between -25.0 and 25.0 degrees and the 
-    #  allowed values for gas are between -1.0 and 1.0
+
+car_parameters = {"throttle": 0, "steer": 0, "brake": 0}
+
+def control(pos_x, pos_y, time, velocity):
+    """ Controls the simulated car"""
+    global car_parameters
     
-     # left turn, back
-    car.steer(25)
-    car.gas(-1.0)
-    time.sleep(3.0) 
-
-    # stop
-    car.gas(0)
     
-    # right turn, back
-    car.steer(-25)
-    car.gas(-0.5)
-
-    # forward
-    car.gas(1.0)
-    time.sleep(0.2)
-
-    # forward 
-    car.gas(0.035)
-    time.sleep(5.0)
+    # TODO: Use WASD keys in simulator to gain an intuitive feel of parallel parking.
+    # Pay close attention to the time, position, and velocity in the simulator.
     
-    # stop
-    car.steer(0)
-    car.gas(0)
-    time.sleep(5.0)    
+    # TODO: Use this information to make decisions about how to set your car parameters
     
-
-car = Car()
-park(car)
+    # In this example the car will drive forward for three seconds
+    # and then backs up until its pos_y is less than 32 then comes to a stop by braking
+        
+    if(pos_y > 38.6):
+        car_parameters["throttle"] = -0.2
+        car_parameters["steer"] = 1
+        car_parameters["brake"] = 0
+    elif(pos_y > 37.7):
+        car_parameters["throttle"] = -0.01
+        car_parameters["steer"] = 0
+        car_parameters["brake"] = 0
+    elif(pos_y > 36.4):
+        car_parameters["throttle"] = -0.01
+        car_parameters["steer"] = -1
+        car_parameters["brake"] = 0
+     
+    else:
+        car_parameters["throttle"] = 0
+        car_parameters["steer"] = 0
+        car_parameters["brake"] = 1
+    return car_parameters
+    
+import src.simulate as sim
+sim.run(control)
