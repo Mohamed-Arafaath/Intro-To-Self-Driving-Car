@@ -8,8 +8,6 @@ In this program, you’ll sharpen your Python skills, apply C++, apply matrices 
 ### Orientation
 In this section you'll get a sneak peak of the classroom, meet the team, and learn about the services provided. Then you'll take a readiness assessment and check out some learning resources to help you make the most out of your experience.
 
-[![My project](https://img.youtube.com/vi/SRRnwS_D4-s/0.jpg)](https://youtu.be/SRRnwS_D4-s)
-
 ### Bayesian Thinking
 Learn the framework that underlies a self-driving car’s understanding of itself and the world around it, and to see the world the way a self-driving car does.
 
@@ -36,4 +34,4 @@ At the end of this course you will use raw sensor data (which give information a
 In this course you’ll learn how a computer sees an image, and how we can use machine learning to teach a computer to identify images programmatically. **In this project i get 100% accuracy**
 
 
-file:///C:/Users/ARAFATH%20JAZEEB/Desktop/Udacity%20Certificate.pdf
+<a href="https://ibb.co/yk1Ck4X"><img src="https://i.ibb.co/yk1Ck4X/Udacity-Certificate.jpg" alt="Udacity-Certificate" border="0"></a>
