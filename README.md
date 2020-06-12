@@ -36,5 +36,4 @@ At the end of this course you will use raw sensor data (which give information a
 In this course you’ll learn how a computer sees an image, and how we can use machine learning to teach a computer to identify images programmatically. **In this project i get 100% accuracy**
 
 
-I was part of the scholarship of lyft and udacity
-![Scholarship](https://wgcv.me/wp-content/uploads/2018/03/Scholarship.png )
+file:///C:/Users/ARAFATH%20JAZEEB/Desktop/Udacity%20Certificate.pdf
